@@ -1,3 +1,6 @@
 Name,Type,Latitude,Longitude
-Amsterdam Logistic CityHub,Macro,52.41680441,4.835733091
-Dura Vermeer Hub ZO,Macro,52.31140129,4.966573992
+Amsterdam Logistic CityHub,macro,52.41680441,4.835733091
+Dura Vermeer Hub ZO,macro,52.31140129,4.966573992
+Nieuwe Kern_NS terrein,micro,52.32106379602128, 4.926914411034058
+Nieuwe Kern_ism SMH,micro,52.31584983404213, 4.934209051359335
+Nieuwe Kern_later,micro,52.31451046120567, 4.923033438052155
