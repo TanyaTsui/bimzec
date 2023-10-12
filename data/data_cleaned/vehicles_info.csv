@@ -1,5 +1,5 @@
 ,transType,vehicleType,capacity_timber,capacity_concrete,capacity_modules,emissions_perKm
 0,road,diesel,20,25,2,0.0009
-1,road,electric,20,25,2,0.0
-2,roadWater,roadWater,50,60,3,0.0007
+1,road,electric,20,25,2,0
+2,water,water,50,60,3,0.0007
 3,rail,rail,45,70,5,0.0006
