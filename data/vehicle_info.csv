@@ -1,0 +1,5 @@
+transType,vehicleType,max_tons,max_m3,emissions_perKm
+road,diesel,25,100,0.0009
+road,electric,25,100,9e-05
+water,water,1000,1500,0.025
+rail,rail,120,140,0.0025

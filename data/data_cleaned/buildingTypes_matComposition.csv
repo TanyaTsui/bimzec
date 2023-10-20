@@ -1,0 +1,88 @@
+material,units,amount_low-rise,amount_mid-rise,amount_high-rise,biobased_type,structural_type
+aluminium ,,,,,none,structural 
+brick,,,,,none,structural 
+cement_cover-floor,,,,,none,structural 
+concrete_in-situ,,,,,none,structural 
+concrete_prefab,,,,,none,structural 
+furnishing_stone,,,,,none,structural 
+glass,,,,,none,structural 
+gravel_sand,,,,,none,structural 
+gypsum,,,,,none,structural 
+isolation,,,,,none,structural 
+plastic,,,,,none,structural 
+rubber,,,,,none,structural 
+steel,,,,,none,structural 
+timber ,,,,,none,structural 
+aluminium ,,,,,none,non-structural
+brick,,,,,none,non-structural
+cement_cover-floor,,,,,none,non-structural
+concrete_in-situ,,,,,none,non-structural
+concrete_prefab,,,,,none,non-structural
+furnishing_stone,,,,,none,non-structural
+glass,,,,,none,non-structural
+gravel_sand,,,,,none,non-structural
+gypsum,,,,,none,non-structural
+isolation,,,,,none,non-structural
+plastic,,,,,none,non-structural
+rubber,,,,,none,non-structural
+steel,,,,,none,non-structural
+timber ,,,,,none,non-structural
+modules,number,,,,none,non-structural
+aluminium ,,,,,semi,structural 
+brick,,,,,semi,structural 
+cement_cover-floor,,,,,semi,structural 
+concrete_in-situ,,,,,semi,structural 
+concrete_prefab,,,,,semi,structural 
+furnishing_stone,,,,,semi,structural 
+glass,,,,,semi,structural 
+gravel_sand,,,,,semi,structural 
+gypsum,,,,,semi,structural 
+isolation,,,,,semi,structural 
+plastic,,,,,semi,structural 
+rubber,,,,,semi,structural 
+steel,,,,,semi,structural 
+timber ,,,,,semi,structural 
+aluminium ,,,,,semi,non-structural
+brick,,,,,semi,non-structural
+cement_cover-floor,,,,,semi,non-structural
+concrete_in-situ,,,,,semi,non-structural
+concrete_prefab,,,,,semi,non-structural
+furnishing_stone,,,,,semi,non-structural
+glass,,,,,semi,non-structural
+gravel_sand,,,,,semi,non-structural
+gypsum,,,,,semi,non-structural
+isolation,,,,,semi,non-structural
+plastic,,,,,semi,non-structural
+rubber,,,,,semi,non-structural
+steel,,,,,semi,non-structural
+timber ,,,,,semi,non-structural
+modules,number,,,,semi,non-structural
+aluminium ,,,,,full,structural 
+brick,,,,,full,structural 
+cement_cover-floor,,,,,full,structural 
+concrete_in-situ,,,,,full,structural 
+concrete_prefab,,,,,full,structural 
+furnishing_stone,,,,,full,structural 
+glass,,,,,full,structural 
+gravel_sand,,,,,full,structural 
+gypsum,,,,,full,structural 
+isolation,,,,,full,structural 
+plastic,,,,,full,structural 
+rubber,,,,,full,structural 
+steel,,,,,full,structural 
+timber ,,,,,full,structural 
+aluminium ,,,,,full,non-structural
+brick,,,,,full,non-structural
+cement_cover-floor,,,,,full,non-structural
+concrete_in-situ,,,,,full,non-structural
+concrete_prefab,,,,,full,non-structural
+furnishing_stone,,,,,full,non-structural
+glass,,,,,full,non-structural
+gravel_sand,,,,,full,non-structural
+gypsum,,,,,full,non-structural
+isolation,,,,,full,non-structural
+plastic,,,,,full,non-structural
+rubber,,,,,full,non-structural
+steel,,,,,full,non-structural
+timber ,,,,,full,non-structural
+modules,number,,,,full,non-structural

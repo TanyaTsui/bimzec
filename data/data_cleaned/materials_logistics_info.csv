@@ -1,0 +1,16 @@
+material,m3_to_t,main_unit,perc_fill,supplier_type
+aluminium,2.7,tons,0.8,international
+brick,2.0,tons,0.8,national
+cement_cover-floor,2.2,tons,0.9090909090909091,national
+concrete_in-situ,2.4,tons,1.0,national
+concrete_prefab,2.4,tons,0.8,national
+furnishing_stone,2.7,tons,0.8333333333333334,national
+glass,2.5,tons,0.8,international
+gravel_sand,1.6,tons,1.0,international
+gypsum,2.3,tons,0.8,international
+isolation,0.05,m3,0.9090909090909091,international
+plastic,0.9,m3,0.7692307692307692,international
+rubber,1.1,tons,0.9090909090909091,international
+steel,7.8,tons,0.6666666666666666,national
+timber,0.7,tons,0.7692307692307692,international
+modules,,n,,international
