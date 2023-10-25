@@ -5,7 +5,6 @@ shapely
 matplotlib
 numpy
 folium
-random
 haversine
 plotly
 base64
