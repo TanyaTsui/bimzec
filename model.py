@@ -535,11 +535,6 @@ class Model(Model):
         self.load_data()
         self.add_parameters(parameters_dict) 
         
-        '''
-        DO NOT CHANGE ORDER OF AGENT CREATION BELOW. 
-        od matrices (created externally in dataPrep.ipynb to save time) depends on 
-        agent.unique_ids, which change if the order of agent creation is changed. 
-        '''
         self.id_count = 0
         self.create_constructionSites()
         self.create_suppliers() 
@@ -945,7 +940,7 @@ def main():
 
         # visualize in Streamlit
         st.write(emissions_text)
-        col1, col2 = st.beta_columns(2)
+        col1, col2 = st.columns(2)
         col1.write(fig_emissions)
         col1.write(fig_materials)
         col2.markdown(map_html, unsafe_allow_html=True)

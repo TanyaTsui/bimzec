@@ -535,11 +535,6 @@ class Model(Model):
         self.load_data()
         self.add_parameters(parameters_dict) 
         
-        '''
-        DO NOT CHANGE ORDER OF AGENT CREATION BELOW. 
-        od matrices (created externally in dataPrep.ipynb to save time) depends on 
-        agent.unique_ids, which change if the order of agent creation is changed. 
-        '''
         self.id_count = 0
         self.create_constructionSites()
         self.create_suppliers() 
@@ -921,108 +916,6 @@ params_conversion = {
                       'conventional': 'none'}
 }
 
-def update_options_hub_network(change): 
-    if change['new'] == 'none': 
-        dropdowns['network_type'].options = ['road']
-        dropdowns['truck_type'].options = ['diesel']
-        dropdowns['circularity_type'].options = ['conventional']
-        dropdowns['modularity_type'].options = ['conventional']
-    else:
-        # Reset to original options if 'none' is not selected
-        dropdowns['network_type'].options = params_options['network_type']
-        dropdowns['truck_type'].options = params_options['truck_type']
-        dropdowns['circularity_type'].options = params_options['circularity_type']
-        
-def update_options_biobased_type(change): 
-    if change['new'] == 'conventional': 
-        dropdowns['modularity_type'].options = ['conventional']
-    else:
-        dropdowns['modularity_type'].options = params_options['modularity_type']
-
-def update_options_modularity_type(change): 
-    if change['new'] == 'non-structural modules': 
-        dropdowns['circularity_type'].options = [ 
-            'circular non-structural + structural elements', 
-            'circular non-structural + structural + foundation elements', 
-            'conventional'
-        ]
-    else:
-        dropdowns['circularity_type'].options = params_options['circularity_type']
-
-def update_options_circularity_type(change): 
-    if change['new'] == 'circular non-structural elements': 
-        dropdowns['modularity_type'].options = ['conventional']
-    else:
-        dropdowns['modularity_type'].options = params_options['modularity_type']
-
-# Create dropdown widgets
-dropdowns = {}
-for key, options in params_options.items():
-    layout = widgets.Layout(width='500px')
-    style = {'description_width': '100px'}
-    dropdowns[key] = widgets.Dropdown(options=options, description=key, 
-                                      value=options[0], layout=layout, style=style)
-    if key == 'hub_network': 
-        dropdowns[key].observe(update_options_hub_network, names='value')
-    if key == 'biobased_type': 
-        dropdowns[key].observe(update_options_biobased_type, names='value')
-    if key == 'modularity_type': 
-        dropdowns[key].observe(update_options_modularity_type, names='value')
-    display(dropdowns[key])
-
-
-import ipywidgets as widgets
-from IPython.display import display, HTML
-
-button = widgets.Button(description="Run model!")
-output = widgets.Output()
-
-display(button, output)
-
-def on_button_clicked(b):
-    with output:
-        output.clear_output(wait=True)
-        
-        print('running model ... ')
-        parameters_dict = {}
-        for name in dropdowns.keys(): 
-            parameters_dict[name] = dropdowns[name].value
-
-        for key, value in parameters_dict.items():
-            if key in params_conversion:
-                parameters_dict[key] = params_conversion[key][value]
-
-        # create and run model 
-        model = Model(parameters_dict)
-        for i in range(2): 
-            model.step()
-
-        emissions_text, fig_emissions, fig_materials, map_html = model.visualize()
-
-        # visualize as widgets
-        print(emissions_text)
-        
-        # fig_emissions.update_layout(height=300, width=500)
-        # fig_materials.update_layout(height=300, width=500)
-        
-        fig_widget_emissions = widgets.Output(layout=widgets.Layout())
-        fig_widget_materials = widgets.Output(layout=widgets.Layout()) 
-        with fig_widget_emissions:
-            fig_emissions.show()
-        with fig_widget_materials: 
-            fig_materials.show()
-            
-        v_box = widgets.VBox([fig_widget_emissions, fig_widget_materials], layout=widgets.Layout(width='30%', height='600px'))
-        
-        map_widget = widgets.HTML(map_html, layout=widgets.Layout(width='70%'))
-        h_box = widgets.HBox([v_box, map_widget])
-        display(h_box)
-        
-
-button.on_click(on_button_clicked)
-
-
-
 import streamlit as st
 
 def main():
@@ -1047,7 +940,7 @@ def main():
 
         # visualize in Streamlit
         st.write(emissions_text)
-        col1, col2 = st.beta_columns(2)
+        col1, col2 = st.columns(2)
         col1.write(fig_emissions)
         col1.write(fig_materials)
         col2.markdown(map_html, unsafe_allow_html=True)
