@@ -1,0 +1,12 @@
+mesa
+pandas
+geopandas
+shapely
+matplotlib
+numpy
+folium
+random
+haversine
+plotly
+base64
+ipywidgets
