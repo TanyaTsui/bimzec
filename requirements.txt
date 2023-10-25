@@ -9,3 +9,4 @@ haversine
 plotly
 ipywidgets
 voila
+streamlit
