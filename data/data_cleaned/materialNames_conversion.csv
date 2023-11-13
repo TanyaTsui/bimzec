@@ -9,8 +9,11 @@ glass,glass
 gravel_sand,concrete
 gypsum,other
 isolation,insulation
-plastic,plastic
-rubber,other
+plaster,other
+bitumen,other
 steel,steel
 timber,timber
-modules,modules
+modules,other
+modules_2D,other
+modules_3D,other
+bitumen,other
