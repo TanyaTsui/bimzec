@@ -8,4 +8,6 @@ folium==0.13.0
 haversine==2.8.0
 plotly==5.11.0
 ipywidgets==8.1.1
+rtree==1.0.1
+pygeos==0.13
 voila==0.4.3
