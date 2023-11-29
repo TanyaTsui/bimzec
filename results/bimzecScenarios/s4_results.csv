@@ -1,0 +1,16 @@
+result_name,value,unit,area,scenario
+co2,240120.0,tons,whole model,4
+NOX,1349478306.83517,g,whole model,4
+PM2.5,17422001.979539976,g,whole model,4
+PM10,34844003.95907995,g,whole model,4
+logistic movements,10644304.0,km,whole model,4
+co2,16381.583856,tons,MRA,4
+NOX,60778975.839999996,g,MRA,4
+PM2.5,192129.68720000001,g,MRA,4
+PM10,384259.37440000003,g,MRA,4
+logistic movements,10644304.0,km,MRA,4
+co2,242.51562,tons,zuid-oost,4
+NOX,899781.8,g,zuid-oost,4
+PM2.5,2844.319,g,zuid-oost,4
+PM10,5688.638,g,zuid-oost,4
+logistic movements,157580.0,km,zuid-oost,4

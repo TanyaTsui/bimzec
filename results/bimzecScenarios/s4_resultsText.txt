@@ -1,0 +1,15 @@
+
+            CO2 emissions (suppliers to construction sites): 13615 tCO2
+            CO2 emissions (suppliers to hubs): 224324 tCO2
+            CO2 emissions (demSites to hubs): 0 tCO2
+            CO2 emissions (hubs to construction sites): 2182 tCO2
+            CO2 emissions (total): 240120 tCO2
+            
+            NOX emissions (total): 1349 tNOX
+            PM2.5 emissions (total): 17422 kg PM2.5
+            PM10 emissions (total): 34844 kg PM10
+            
+            total logistics movements within MRA: 10.644 million km
+            
+            
+            
