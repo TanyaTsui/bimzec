@@ -1,0 +1,16 @@
+result_name,value,unit,area
+co2,100938.0,tons,whole model
+NOX,895149855.635016,g,whole model
+PM2.5,17686618.955142565,g,whole model
+PM10,35373237.91028513,g,whole model
+logistic movements,13090660.0,km,whole model
+co2,20146.52574,tons,MRA
+NOX,74747668.6,g,MRA
+PM2.5,236286.413,g,MRA
+PM10,472572.826,g,MRA
+logistic movements,13090660.0,km,MRA
+co2,655.800219,tons,zuid-oost
+NOX,2433150.91,g,zuid-oost
+PM2.5,7691.48405,g,zuid-oost
+PM10,15382.9681,g,zuid-oost
+logistic movements,426121.0,km,zuid-oost
